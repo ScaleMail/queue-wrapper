@@ -14,16 +14,18 @@ export default class QueueWrapper {
   }
 
   connect() {
-    
+    this.driver.connect();
   }
 
-  disconnect() {}
+  disconnect() {
+    this.driver.disconnect();
+  }
 
   send(channel : string = ``, message : string | Object = ``) {
-
+    this.driver.send(channel, message);
   }
 
   addListener(channel : string, handler : Function) {
-
+    this.driver.registerListener(channel, handler);
   }
 }

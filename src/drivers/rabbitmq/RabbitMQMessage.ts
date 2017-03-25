@@ -1,4 +1,4 @@
-import JSONUnwrap from '../../utils/jsonUnwrap';
+import JSONTool from '../../utils/jsonTool';
 
 export default class RabbitMQMessage implements Message {
   msg : any;
@@ -12,7 +12,7 @@ export default class RabbitMQMessage implements Message {
   getBody() {
     const body = this.msg.content.toString();
 
-    return JSONUnwrap.unwrap(body);
+    return JSONTool.unwrap(body);
   }
 
   ack() {
