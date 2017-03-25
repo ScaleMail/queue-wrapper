@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Wrapper around messaging queue drivers",
   "main": "index.js",
-  "repository": "git@github.com:ScaleMail/queue-wrapper.git",
+  "repository": "git@github.com:andrewlively/queue-wrapper.git",
   "author": "Andrew Lively <andrew@lively.software>",
   "license": "MIT",
   "dependencies": {
